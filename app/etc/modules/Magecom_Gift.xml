@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Magecom_Gift>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Magecom_Gift>
+    </modules>
+</config>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Magecom_Gift>
+            <version>0.1.0</version>
+        </Magecom_Gift>
+    </modules>
+    <global>
+        <models>
+            <magecom_gift>
+                <class>Magecom_Gift_Model</class>
+            </magecom_gift>
+        </models>
+        <helpers>
+             <Gift>
+                 <class>Magecom_Gift_Helper</class>
+             </Gift>
+        </helpers>
+
+
+   </global>
+    <frontend>
+        <events>
+            <checkout_cart_save_after>
+                <observers>
+                    <magecom_gift_add_gift>
+                        <class>magecom_gift/observer</class>
+                        <method>addGift</method>
+                    </magecom_gift_add_gift>
+                </observers>
+            </checkout_cart_save_after>
+        </events>
+    </frontend>
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <all>
+                     <title>Allow Everything</title>
+                </all>
+                     <admin>
+                         <children>
+                             <system>
+                                 <children>
+                                     <config>
+                                         <children>
+                                             <Magecom>
+                                                 <title>Magecom - All</title>
+                                             </Magecom>
+                                         </children>
+                                     </config>
+                                 </children>
+                             </system>
+                         </children>
+                     </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
