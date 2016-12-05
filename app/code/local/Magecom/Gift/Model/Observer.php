@@ -14,7 +14,6 @@ class Magecom_Gift_Model_Observer
             $cart = Mage::getSingleton('checkout/cart')->getQuote(); 
             foreach ($cart->getAllVisibleItems() as $item) {  
                 if ($item->getProductId() == $giftId) {
-                    // die('df');
                     return;
                 }
             }
