@@ -14,8 +14,8 @@
             <show_in_default>1</show_in_default>
             <show_in_website>1</show_in_website>
             <show_in_store>1</show_in_store>
- 
             <groups>
+		    
                 <Magecom_group translate="label" module="Gift">
                     <label>Magecom Gift Options</label>
                     <frontend_type>text</frontend_type>
@@ -23,10 +23,9 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
- 
-                    <fields>
+                     <fields>
                                                 
-						<Magecom_inputone translate="label">
+			<Magecom_inputone translate="label">
                             <label>Input Special price: </label>
                             <comment>Price</comment>
                             <frontend_type>text</frontend_type>
@@ -36,7 +35,7 @@
                             <show_in_store>1</show_in_store>
                         </Magecom_inputone>
 															
-						<Magecom_inputtwo translate="label">
+			<Magecom_inputtwo translate="label">
                             <label>Input ID of Gift Item: </label>
                             <comment>Id_gift</comment>
                             <frontend_type>text</frontend_type>
@@ -45,10 +44,8 @@
                             <show_in_website>2</show_in_website>
                             <show_in_store>2</show_in_store>
                         </Magecom_inputtwo>
-											
-														
-				
-                    </fields>
+			     
+                   </fields>
                 </Magecom_group>
             </groups>
         </Magecom>
