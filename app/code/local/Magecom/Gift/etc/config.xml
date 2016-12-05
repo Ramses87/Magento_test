@@ -17,9 +17,7 @@
                  <class>Magecom_Gift_Helper</class>
              </Gift>
         </helpers>
-
-
-   </global>
+    </global>
     <frontend>
         <events>
             <checkout_cart_save_after>
@@ -32,8 +30,7 @@
             </checkout_cart_save_after>
         </events>
     </frontend>
-    
-    <adminhtml>
+      <adminhtml>
         <acl>
             <resources>
                 <all>
